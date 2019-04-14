@@ -6,20 +6,34 @@
     <style>
     body    {
         background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     #twitch {
-        height: 100%;
-        width: 75%;
+        border: solid 6px red;
+        height: 66%;
+        width: 80%;
     }
 
-    #chat   {
-        height: 100%;
-        width: 25%;
+    nav   {
+        position: relative;
+        top: 2%;
+        text-align: center;
+    }
+
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: purple;
+        padding: 10px;
     }
     </style>
     <body>
-        <iframe class="w3-display-left" id="twitch" src="https://player.twitch.tv/?channel=hopedestruction" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
-        <iframe class="w3-display-right" id="chat" src="https://www.twitch.tv/embed/hopedestruction/chat?darkpopout" frameborder="0" scrolling="no"></iframe>
+        <nav class="w3-display-top">
+            <a href="https://www.twitch.tv/hopedestruction">Twitch</a>
+        </nav>
+        <iframe class="w3-display-middle" id="twitch" src="https://player.twitch.tv/?channel=hopedestruction" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
     </body>
 </html>
