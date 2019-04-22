@@ -7,9 +7,14 @@
     body    {
         background-color: black;
         font-family: Arial, Helvetica, sans-serif;
+        background-image: url(https://i.pinimg.com/originals/14/83/48/148348466cbd6f6241a025a62e44202c.gif);
+        background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     }
 
-    #twitch {
+    #live {
         border: solid 4px purple;
         height: 66%;
         width: 80%;
@@ -26,14 +31,23 @@
         color: white;
         font-weight: bold;
         font-size: 20px;
-        background-color: purple;
         padding: 10px;
     }
+
+    #twitch {
+        background-color: purple;
+    }
+
+    #twitter {
+        background-color: dodgerblue;
+    }
+
     </style>
     <body>
         <nav class="w3-display-top">
-            <a href="https://www.twitch.tv/hopedestruction">Twitch</a>
+            <a id="twitch" href="https://www.twitch.tv/hopedestruction">Twitch</a>
+            <a id="twitter" href="https://twitter.com/hopedestruction">Twitter</a>
         </nav>
-        <iframe class="w3-display-middle" id="twitch" src="https://player.twitch.tv/?channel=hopedestruction" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+        <iframe class="w3-display-middle" id="live" src="https://player.twitch.tv/?channel=hopedestruction" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
     </body>
 </html>
