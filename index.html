@@ -33,46 +33,68 @@
         
     }
 
-    /*
-    #live {
-        border: solid 4px purple;
-        height: 66%;
-        width: 80%;
-    }
-    
-    nav   {
-        position: relative;
-        top: 2%;
-        text-align: center;
-    }
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    nav > a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        padding: 10px;
-    }
+.container {
+  color: white;
+  text-align: center;
+}
 
-    #twitch {
-        background-color: purple;
-    }
+h1 {
+  font-weight: normal;
+}
 
-    #twitter {
-        background-color: dodgerblue;
-    */
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 450%;
+}
     </style>
+
+    <script>
+        const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Sep 1, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      
+      //do something later when date is reached
+      //if (distance < 0) {
+      //  clearInterval(x);
+      //  'IT'S MY BIRTHDAY!;
+      //}
+
+    }, second)
+    </script>
     <body>
-        <!--
-        <nav class="w3-display-top">
-            <a id="twitch" href="https://www.twitch.tv/hopedestruction">Twitch</a>
-            <a id="twitter" href="https://twitter.com/hopedestruction">Twitter</a>
-        </nav>
-        <iframe class="w3-display-middle" id="live" src="https://player.twitch.tv/?channel=hopedestruction" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>-->
-
-        <p class="w3-display-middle" id="lafecha">1/9/19</p>
-    </br>
-    <iframe class="w3-display-middle" src="http://free.timeanddate.com/countdown/i6viwrap/n141/cf11/cm0/cu4/ct3/cs1/ca0/co0/cr0/ss0/cacfff/cpcf00/pct/tc66c/fs110/szw576/szh243/iso2019-09-01T00:00:00" allowTransparency="true" frameborder="0" width="521" height="38"></iframe>
-
+    <div class="container">
+        <ul class="w3-display-middle">
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
     </body>
 </html>
