@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>hope</title>
+        <title>Waiting</title>
         <link rel="stylesheet" href="w3.css">
         <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/2624/8910/files/Logo_Black_300x300.png">
         <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@ li span {
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Sep 1, 2019 00:00:00').getTime(),
+let countDown = new Date('Aug 31, 2019 00:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
@@ -78,13 +78,6 @@ let countDown = new Date('Sep 1, 2019 00:00:00').getTime(),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-      
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
-
     }, second)
     </script>
     <body>
@@ -93,7 +86,6 @@ let countDown = new Date('Sep 1, 2019 00:00:00').getTime(),
           <li><span id="days"></span>days</li>
           <li><span id="hours"></span>Hours</li>
           <li><span id="minutes"></span>Minutes</li>
-          <!--<li><span id="seconds"></span>Seconds</li>-->
         </ul>
       </div>
     </body>
