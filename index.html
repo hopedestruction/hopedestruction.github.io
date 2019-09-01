@@ -1,97 +1,87 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>...</title>
-        <link rel="stylesheet" href="w3.css">
-        <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/2624/8910/files/Logo_Black_300x300.png">
-        <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
-    </head>
-    <style>
-    body    {
-        background-color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        /*background-image: url(https://i.gifer.com/7ji5.gif);*/
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-    }
+<title>Hope Destruction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+<head>
+  <link rel="icon" href="https://www.iconsdb.com/icons/preview/red/video-hd-2-xxl.png">
+</head>
+<style>
+body {
+  font-family: "Raleway", sans-serif;
+  }
 
-    img     {
-        height: 16%;
-    }
-
-    img:hover   {
-        height: 16%;
-        opacity: 0.6;
-    }
-
-    #lafecha {
-        text-align: center;
-        color: white;
-        font-family: 'Rock Salt', cursive;
-        font-size: 666%;
-        
-    }
-
-    * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body, html {height: 100%}
+.bgimg {
+  background-image: url('wall.jpg');
+  background-color: black;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-.container {
-  color: white;
+h1  {
+  font-family: 'Teko', sans-serif;
   text-align: center;
+  font-size: 666%;
 }
 
-h3 {
-  font-weight: normal;
-  color: white;
+h2  {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-size: 300%;
 }
 
-li {
-  display: inline-block;
-  font-size: 1.1em;
-  list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
+p  {
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+  font-size: 200%;
 }
 
-li span {
+a{
+    text-decoration: none;
+    background-color: black;
+    padding: 6%;
+}
+
+#gib {
   display: block;
-  font-size: 444%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-    </style>
 
-    <script>
-        const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
+</style>
+<body>
 
-let countDown = new Date('Sep 1, 2019 18:00:00').getTime(),
-    x = setInterval(function() {
-
-      let now = new Date().getTime(),
-          distance = countDown - now;
-
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-    }, second)
-    </script>
-
-    <body>
-    <div class="container">
-        <ul class="w3-display-middle">
-          <li><span id="days"></span>days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li><span id="seconds"></span>Seconds</li>
-        </ul>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle">
+      <img id="gib" width="45%" src="GIB.png"/>
+    <hr class="w3-border-white" style="margin:auto;width:50%">
+    <p class="w3-center">Now available on <i class="w3-text-green">Spotify</i></p>
+  </br>
+</br>
+</br>
+  </div>
+  <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s1">
+              <a href="index.html" class="w3-button w3-block w3-black w3-hover-red"><img height="21px" src="https://pngimage.net/wp-content/uploads/2018/06/white-home-logo-png-5.png"/></a>
+        </div>
+        <div class="w3-col s5">
+          <a href="https://twitter.com/hopedestruction" target="_blank" class="w3-button w3-block w3-black w3-hover-blue"><img height="21px" src="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png"/></a>
+        </div>
+        <div class="w3-col s5">
+          <a href="https://open.spotify.com/artist/6sDcIjNsHUV2Nvtn14crRE" target="_blank" class="w3-button w3-block w3-black w3-hover-green"><img height="21px" src="https://www.iconsdb.com/icons/preview/white/spotify-xxl.png"/></a>
+        </div>
+        <div class="w3-col s1">
+          <a href="about.html" class="w3-button w3-block w3-black w3-hover-WHITE"><b>ABOUT</b></a>
+        </div>
       </div>
-      <a href="over.html"><h3 class="w3-display-bottommiddle">🔒</h3></a>
-    </body>
+  </div>
+<img class="w3-display-bottommiddle" height="13%" src="lgo.png"/>
+</div>
+</body>
 </html>
