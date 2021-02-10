@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Hope Destruction</title>
+<title>Spotify</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,7 +30,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .footercontact {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,36 +39,31 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('wall.png');
+  background-color: #1ed760;
   min-height: 100%;
 }
 
 /* Second image */
 .bgimg-2 {
-  background-image: url("0240.png");
-  min-height: 80%;
+  background-image: url("Pic_20210131_045441_3840x2160.jpeg");
+  min-height: 100%;
 }
 
 {}
 /* Third image */
 .bgimg-3 {
-  background-image: url("wall2.jpg");
+  background-color: #ecc4c2;
   min-height: 100%;
 }
 
 .bgimg-4 {
-  background-image: url('backshop.jpg');
+  background-image: url("e01jy31.png");
   min-height: 100%;
 }
 
 .bgimg-5 {
-  background-image: url('fblur.png');
-  min-height: 50%;
-}
-
-.footercontact {
-  background-color: rgb(6, 6, 6);
-  min-height: 6%;
+  background-image: url("fblur.png");
+  min-height: 66%;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -81,7 +76,6 @@ body, html {
     min-height: 400px;
   }
 }
-
 */
 
 
@@ -176,7 +170,17 @@ body, html {
 }
 
 p {
-  color: black;
+  color: white;
+}
+
+.footer-bg {
+	 background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,
+	 url('gif.gif');
+	 /*add your desire image src path here.*/
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  background-position: center;
 }
 
 h2 {
@@ -187,10 +191,6 @@ b {
   color: white;
 }
 
-h1 {
-  color: black;
-  font-weight: bold;
-}
 
 .zoom {
   transition: transform .2s;
@@ -203,109 +203,92 @@ h1 {
   transform: scale(1.1); 
 }
 
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 300%;
+  padding: 20PX;
+}
+
 </style>
 <body>
 
   <div class="w3-top">
-    <div class="w3-row w3-black">
-      <div class="w3-col s6">
-        <a href="https://open.spotify.com/artist/6sDcIjNsHUV2Nvtn14crRE" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="16px" src="spotify.png"/></a>
+    <div class="w3-row w3-padding">
+      <div class="w3-col s4">
+        <a href="https://instagram.com/hopedestruction" target="_blank" class="zoom w3-button w3-block w3-hover-deep-orange"><img height="21px" src="instagram.png"/></a>
       </div>
-      <div class="w3-col s6">
-        <a href="https://music.apple.com/es/artist/hope-destruction/1137073840?l=en" target="_blank" class="zoom w3-button w3-block w3-hover-red"><img height="16px" src="apple-128.png"/></a>
+      <div class="w3-col s4">
+        <a href="https://open.spotify.com/artist/6sDcIjNsHUV2Nvtn14crRE" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="21px" src="spotify.png"/></a>
       </div>
+      <div class="w3-col s4">
+        <a href="https://music.apple.com/es/artist/hope-destruction/1137073840?l=en" target="_blank" class="zoom w3-button w3-block w3-hover-grey"><img height="21px" src="apple-128.png"/></a>
+      </div>
+      <!--<div class="w3-col s2">
+        <a href="faq.html" class="zoom w3-button w3-block w3-hover-black"><b>FAQ</b></a>
+      </div>
+      <div class="w3-col s2">
+        <a href="about.html" class="w3-button w3-block w3-black w3-hover-WHITE"><b>?</b></a>
+      </div>-->
     </div>
 </div>
 
-
-
-<!--Merch-->
-<div class="bgimg-4 w3-display-container" id="home">
-  <div class="w3-display-middle w3-center" style="white-space:nowrap;">
-    <br/><br/><br/>
-    <h1 class="w3-white w3-border">MERCH</h1>
-    <p class="w3-padding w3-white w3-border"><i>Limited time only / Available until January 30</i></p>
-    <br/>
-      <div class="w3-row w3-black">
-        <div class="w3-col s12">
-          <a href="https://teespring.com/stores/hopedestruction" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="shopping-bag-128.png"/></a>
-        </div>
-      </div>
-      
-  </div>
-</div>
-
-<!--Project-->
+<!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle w3-center" style="white-space:nowrap;">
     <br/><br/><br/>
-    <img width="60%" src="project.gif"/>
-    <!--<p class="w3-center">Part of the original soundtrack of <b>HUNTER 235</b></p>-->
-    <br/>
-      <div class="w3-row w3-padding">
-        <div class="w3-col s6">
-          <a href="https://open.spotify.com/album/1E9o1JCHagGJQ0kLY7ZHhZ?si=6r35cOFFTQyJUHr_7K67Pg" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="spotify.png"/></a>
-        </div>
-        <div class="w3-col s6">
-          <a href="https://music.apple.com/es/album/project-235-single/1534800227?l=en" target="_blank" class="zoom w3-button w3-block w3-hover-grey"><img height="32px" src="apple-128.png"/></a>
-        </div>
-  </div>
-      
+    <a href="https://open.spotify.com/artist/6sDcIjNsHUV2Nvtn14crRE" target="_blank" class="zoom w3-button w3-block w3-hover-black"><img width="60%" src="spotify.png"/></a>
+    <br/>     
   </div>
 </div>
 
+
 <!--Forest-->
-<div class="bgimg-5 w3-display-container" id="home">
+<div class="bgimg-2 w3-display-container" id="home">
   <div class="w3-display-middle w3-center" style="white-space:nowrap;">
     <br/><br/><br/>
-    <h1 class="w3-text-white">FOREST</h1>
-    <p class="w3-text-white"><i>by Oriol's Themes</i></p>
+    <h1 class="w3-text-white w3-black">CAR MUSIC</h1>
     <!--<p class="w3-center">Part of the original soundtrack of <b>HUNTER 235</b></p>-->
     <br/>
       <div class="w3-row w3-padding">
         <div class="w3-col s12">
-          <a href="https://www.youtube.com/watch?v=knGgcWApyms" target="_blank" class="zoom w3-button w3-block w3-hover-red"><img height="32px" src="yt.png"/></a>
+          <a href="https://open.spotify.com/playlist/2RyRzKEbSXodAW9L9VpC5Y" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="spotify.png"/></a>
         </div>
   </div>
   </div>
 </div>
 
-
-<!--Hunter-->
+<div class="bgimg-3 w3-display-container" id="home">
+  <div class="w3-display-middle w3-center" style="white-space:nowrap;">
+    <br/><br/><br/>
+    <h1 class="w3-text-white w3-black">OTAKU MUSIC</h1>
+    <!--<p class="w3-center">Part of the original soundtrack of <b>HUNTER 235</b></p>-->
+    <br/>
+      <div class="w3-row w3-padding">
+        <div class="w3-col s12">
+          <a href="https://open.spotify.com/playlist/1wONet8q9wwclE7hx2sHp3" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="spotify.png"/></a>
+        </div>
+  </div>
+  </div>
+</div>
+<!-- Second Parallax Image with Portfolio Text 
 <div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle w3-center">
     <img width="50%" src="hunter235logo.png">
-    <h2>THE HUNT BEGINS NOW</h2>
-    <p class="w3-text-white">Now available on <b>itch.io</b></p>
-    <div class="w3-row w3-padding">
-      <div class="w3-col s12">
-        <a href="https://true-white.itch.io/hunter-235" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="itchio-textless-white.svg"/></a>
-      </div>
-    </div>
+    <h2>THE HUNT STARTS IN 2020</h2>
+    <form method="get" target="_blank" action="https://true-white.itch.io/hunter-235"><button class="button235">official website</button></form>
+      <form method="get" target="_blank" action="https://www.instagram.com/hunter235thegame/"><button class="button235">@hunter235thegame</button></form>
   </div>
+</div>
+-->
 
-</div>
+<!-- Third Parallax Image with Portfolio Text -->
 
-<!--GIB-->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle w3-center">
-    <center><img width="50%" src="GIB.png"/></center>
-      <div class="w3-row w3-padding">
-        <div class="w3-col s6">
-          <a href="https://open.spotify.com/album/0R9F2OAnt6ycmLZNkUlz5O?si=BNVnB6_8T9aODwtsOs0gRQ" target="_blank" class="zoom w3-button w3-block w3-hover-green"><img height="32px" src="spotify.png"/></a>
-        </div>
-        <div class="w3-col s6">
-          <a href="https://music.apple.com/es/album/get-it-back-single/1504989832?l=en" target="_blank" class="zoom w3-button w3-block w3-hover-grey"><img height="32px" src="apple-128.png"/></a>
-        </div>
-      </div>
-</div>
-</div>
+<div class="w3-blue"> </div>
 
-<div class="footercontact w3-display-container">
-  <div class="w3-display-middle w3-center">
-    <a class="w3-text-white">2021 | Hope Destruction</a>
-        <!--<a class="w3-text-white"><B>CONTACT | </B> DM me on <b>Instagram </b>&nbsp; &#9735; &#9993;</a>-->
-</div>
-</div> 
+<!-- Footer 
+<footer class="footer-bg w3-center w3-padding-4">
+<img width="11%" src="lgo.png"/>
+</footer>-->
 </body>
 </html>
