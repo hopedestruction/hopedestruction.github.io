@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <head>
   <link rel="icon" href="heart.png">
 </head>
@@ -45,8 +47,8 @@ body, html {
 
 /* Second image */
 .bgimg-2 {
-  background-image: url("0240.png");
-  min-height: 100%;
+  background-image: url("");
+  min-height: 20%;
 }
 
 {}
@@ -171,6 +173,8 @@ body, html {
 
 p {
   color: white;
+  font-size: 200%;
+  font-family: 'Oswald', sans-serif;
 }
 
 .footer-bg {
@@ -232,6 +236,43 @@ h1 {
     </div>
 </div>
 
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle w3-center">
+    <p id="demo"></p>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 12, 2021 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+  </div>
+</div>
+
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-middle w3-center" style="white-space:nowrap;">
@@ -250,34 +291,6 @@ h1 {
       
   </div>
 </div>
-
-
-<!--Forest-->
-<div class="bgimg-5 w3-display-container" id="home">
-  <div class="w3-display-middle w3-center" style="white-space:nowrap;">
-    <br/><br/><br/>
-    <h1 class="w3-text-white">FOREST</h1>
-    <p class="w3-text-white"><i>by Oriol's Themes</i></p>
-    <!--<p class="w3-center">Part of the original soundtrack of <b>HUNTER 235</b></p>-->
-    <br/>
-      <div class="w3-row w3-padding">
-        <div class="w3-col s12">
-          <a href="https://www.youtube.com/watch?v=knGgcWApyms" target="_blank" class="zoom w3-button w3-block w3-hover-red"><img height="32px" src="yt.png"/></a>
-        </div>
-  </div>
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text 
-<div class="bgimg-2 w3-display-container">
-  <div class="w3-display-middle w3-center">
-    <img width="50%" src="hunter235logo.png">
-    <h2>THE HUNT STARTS IN 2020</h2>
-    <form method="get" target="_blank" action="https://true-white.itch.io/hunter-235"><button class="button235">official website</button></form>
-      <form method="get" target="_blank" action="https://www.instagram.com/hunter235thegame/"><button class="button235">@hunter235thegame</button></form>
-  </div>
-</div>
--->
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container">
