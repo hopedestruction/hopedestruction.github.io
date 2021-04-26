@@ -31,7 +31,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-footer {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,6 +77,11 @@ body, html {
 .bgimg-6 {
   background-image: url("wallwalk.jpg");
   min-height: 100%;
+}
+
+.bgimg-footer {
+  background-color: black;
+  min-height: 2%;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -172,24 +177,24 @@ h1 {
 </style>
 <body>
 
-  <div class="w3-top w3-black">
+  <div class="w3-top">
     <div class="w3-row">
-      <div class="w3-col s2">
+      <div class="w3-col s2 w3-black">
         <a href="https://open.spotify.com/artist/6sDcIjNsHUV2Nvtn14crRE" target="_blank" class="w3-button w3-block w3-hover-green"><img height="20px" src="spotify.png"/></a>
       </div>
-      <div class="w3-col s2">
+      <div class="w3-col s2 w3-black">
         <a href="https://www.deezer.com/es/artist/10774462" target="_blank" class="w3-button w3-block w3-hover-blue"><img height="20px" src="deezer.png"/></a>
       </div>
-      <div class="w3-col s3">
+      <div class="w3-col s3 w3-black">
         <a href="https://music.apple.com/es/artist/hope-destruction/1137073840?l=en" target="_blank" class="w3-button w3-block w3-hover-red"><img height="20px" src="apple-128.png"/></a>
       </div>
-      <div class="w3-col s3">
+      <div class="w3-col s3 w3-black">
         <a href="https://hopedestruction.bigcartel.com" target="_blank" class="w3-button w3-block w3-hover-green"><img height="20px" src="shopping-bag-128.png"/></a>
       </div>
      <!-- <div class="w3-col s2">
         <a href="https://music.apple.com/es/artist/hope-destruction/1137073840?l=en" target="_blank" class="w3-button w3-block w3-hover-red"><img height="20px" src="apple-128.png"/></a>
       </div>-->
-      <div class="w3-col s2">
+      <div class="w3-col s2 w3-black">
         <a href="faq.html" class="w3-button w3-block w3-hover-grey"><img height="20px" src="question.png"/></a>
       </div>
     </div>
@@ -314,6 +319,15 @@ h1 {
       <div class="w3-col s12">
         <a href="https://music.apple.com/es/album/get-it-back-single/1504989832" target="_blank" class="zoom w3-button w3-block w3-hover-red"><img width="32px" src="apple-128.png"/></a>
       </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="bgimg-footer w3-display-container">
+  <div class="w3-display-middle w3-center">
+    <a style="font-size:xx-small;" class="w3-text-white">Hope Destruction 2021© All rights reserved.</a>
     </div>
 </div>
 </div>
